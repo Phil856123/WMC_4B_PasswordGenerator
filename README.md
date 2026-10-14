@@ -7,6 +7,8 @@ Loesung zur Aufgabe mit zwei getrennten CommonJS-Projekten:
 
 Repository: https://github.com/Phil856123/WMC_4B_PasswordGenerator
 
+npm-Paket: https://www.npmjs.com/package/@hoecknerp23030/password-generator (Version 0.0.2, oeffentlich veroeffentlicht).
+
 ## Schnell starten unter Windows
 
 `STARTEN.cmd` doppelt anklicken. Beim ersten Start werden die Abhaengigkeiten installiert; danach werden drei Passwoerter mit je 16 Zeichen inklusive Sonderzeichen ausgegeben.
@@ -51,6 +53,8 @@ Mindestens eine Zeichenart muss aktiviert sein. Jede aktivierte Zeichenart ist g
 ## Aufbau und Tests
 
 Das Modul exportiert eine Funktion mit `module.exports`. Die App importiert sie mit `require('@hoecknerp23030/password-generator')`. Im Aufgabenordner verknuepfen npm Workspaces die beiden Projekte. Zusaetzlich ist die lokale Abhaengigkeit als `file:../password-generator` eingetragen. Dadurch kann die App auch separat installiert werden, solange beide Ordner nebeneinander liegen.
+
+Alle acht Tests bestanden, auch nach dem Entpacken der Abgabe und erneuter Installation. Das veroeffentlichte Paket 0.0.2 wurde ausserdem in einem unabhaengigen Projekt aus der npm-Registry installiert; dort bestanden die vier CLI-Integrationstests.
 
 Die acht Tests pruefen unter anderem alle 15 gueltigen Kombinationen von Zeichenarten, Laengengrenzen, fehlerhafte Einstellungen sowie echte CLI-Aufrufe mit Hilfe, Version und Fehlerfaellen. Fuer die Tests sind keine weiteren Pakete erforderlich.
 
