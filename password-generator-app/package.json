@@ -1,0 +1,18 @@
+{
+  "name": "password-generator-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kommandozeilenprogramm zum Testen des Passwortgenerator-Moduls",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "commander": "^14.0.0",
+    "@hoecknerp23030/password-generator": "file:../password-generator"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

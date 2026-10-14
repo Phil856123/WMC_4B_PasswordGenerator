@@ -1,0 +1,11 @@
+{
+  "name": "password-generator-aufgabe",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["password-generator", "password-generator-app"],
+  "scripts": {
+    "start": "npm start --workspace=password-generator-app --",
+    "test": "node --test password-generator/test/*.test.js password-generator-app/test/*.test.js"
+  },
+  "engines": { "node": ">=20" }
+}
